@@ -14,7 +14,7 @@ class MinMaxStack:
     
     def push(self, value):
          newMinMax = {'min': value, 'max': value}
-         if self.minMaxStack
+         if self.minMaxStack:
             lastMinMax = self.minMaxStack[-1]
             newMinMax['min'] = min(lastMinMax['min'], value)
             newMinMax['max'] = max(lastMinMax['max'], value)
